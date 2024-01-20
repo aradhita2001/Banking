@@ -2,7 +2,7 @@ package com.wecp.progressive.entity;
 import java.util.Date;
 
 
-public class Transactions {
+public class Transactions implements Comparable<Transactions> {
 
     private int trasactionId;
     private int accountId;
@@ -49,5 +49,12 @@ public class Transactions {
     }
     public void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
+    }
+
+    @Override
+    public int compareTo(Transactions o) {
+        if(this.amount > o.amount) return  1;
+        if(this.amount < o.amount) return -1;
+        return 0;
     }
 }

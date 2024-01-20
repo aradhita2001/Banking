@@ -44,5 +44,4 @@ public class Accounts implements Comparable<Accounts> {
         if(this.balance < o.balance) return -1;
         return 0;
     }
-
 }
