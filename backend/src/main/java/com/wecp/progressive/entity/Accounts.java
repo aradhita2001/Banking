@@ -1,5 +1,5 @@
 package com.wecp.progressive.entity;
-
+//made changes 
 public class Accounts implements Comparable<Accounts> {
     private int accountId;
     private int customerId;
