@@ -83,5 +83,4 @@ public class Customers implements Comparable<Customers> {
     public int compareTo(Customers o) {
         return this.name.compareTo(o.name);
     }
-
 }
